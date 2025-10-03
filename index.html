@@ -1,202 +1,152 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>MostroJovan</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <title>Mi Música - [Tu Nombre Artístico]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/37ef4fca07.js"></script>
+    <script src="https://kit.fontawesome.com/37ef4fca07.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #1e1e1e, #000000);
+      color: #fff;
+      text-align: center;
+    }
 
+    header {
+      padding: 5px 5px 5px;
+    }
+
+    .imageMain{
+        width: 30%;
+    }
+
+    .imageMP3{
+        width: 50%;
+    }
+
+    .iframeEm{
+        width: 660px;
+         height: 400px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .link-card {
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 20px 30px;
+      width: 85px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .link-card:hover {
+      transform: scale(1.05);
+      background-color: #333;
+    }
+
+    .link-card a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            padding: 1px 1px 1px;
+        }
+
+        .imageMain{
+            width: 50%;
+        }
+
+        .iframeEm{
+            width: 360px;
+            height: 450px;
+        }
+
+        .links{
+            padding-top: 5%;
+        }
+
+        .link-card {
+            width: 250px;
+        }
+
+        .imageMP3{
+            width: 80%;
+        }
+
+    }
+  </style>
 </head>
-<body id="videos" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
+  <header>
+    <h1><img src="img/Mostro-03.png" class="imageMain"></h1>
+    <iframe src="https://www.youtube.com/embed/bgznk3_vrME" allowfullscreen class="framevideo"></iframe>
+    <iframe src="https://www.youtube.com/embed/Y7pivEpv1Y0" allowfullscreen class="framevideo"></iframe>
+  </header>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <img src="img/Mostro-03.png" style="width:15%;">
+  <section class="links">
+    <div class="link-card">
+      <a href="https://www.tiktok.com/@mostrojovan?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok aredes"></i></a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#banner">PRINCIPAL</a></li>
-        <li><a href="#cancion">VIDEOS</a></li>
-        <li><a href="#frases">FRASES</a></li>
-        <li><a href="#redes">SOCIAL</a></li>
-      </ul>
+    <div class="link-card">
+      <a href="https://www.facebook.com/mostrojovan" target="_blank"><i class="fab fa-facebook-f aredes"></i></a>
     </div>
-  </div>
-</nav>
-
-
-
-<!-- Container (The Band Section) -->
-<div id="banner" class="containerhead text-center">
-
-</div>
-
-<!-- Container (TOUR Section) -->
-<div id="cancion" class="bg-1">
-  <div class="container">
-    <h2 class="text-center">VIDEOS MOSTROJOVAN</h3>
-      <p><em>YouTube</em></p>
-      <div class="row">
-        <div class="col-sm-4">
-          Comenzar Desde Cero (Canción Original)
-          <iframe src="https://www.youtube.com/embed/bgznk3_vrME" allowfullscreen class="framevideo"></iframe>
-        </div>
-        <div class="col-sm-4">
-          Solo Por Tí (Canción Original)
-          <iframe src="https://www.youtube.com/embed/Y7pivEpv1Y0" allowfullscreen class="framevideo"></iframe>
-        </div>
-        <div class="col-sm-4">
-          Dime Si Tu (Canción Original)
-          <iframe src="https://www.youtube.com/embed/jPRnrQWSCGg"  allowfullscreen class="framevideo"></iframe>
-        </div>
-      </div>
-      <br><br>
-      <p><em>Facebook</em></p>
-      <div class="row">
-        <div class="col-sm-4">
-          Brillas (Cover De León Larregui)
-          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmostrojovan%2Fvideos%2F1590330321030853%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="false" class="framevideo"></iframe>
-        </div>
-        <div class="col-sm-4">
-          Que Será De Ti? (Cover De Roberto Carlos)
-          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmostrojovan%2Fvideos%2F648909386629476%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" class="framevideo"></iframe>
-        </div>
-        <div class="col-sm-4">
-          Si Me Tenías (Cover De Mijares)
-          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmostrojovan%2Fvideos%2F277331743370645%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" class="framevideo"></iframe>
-        </div>
-      </div>
-    
-
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="frases" class="container">
-  <h3 class="text-center">Frases de MostroJovan</h3>
-  <p class="text-center"><em>Puedes encontrar mas en Facebook e Instagram</em></p>
-
-  <div class="row">
-    <div class="col-sm-4">
-        <img src="img/Frase01.jpg" width="255" height="255">
+    <div class="link-card">
+      <a href="https://www.instagram.com/mostrojovan" target="_blank"><i class="fab fa-instagram aredes"></i></a>
     </div>
-    <div class="col-sm-4">
-        <img src="img/Frase02.jpg" width="255" height="255">
+    <div class="link-card">
+      <a href="https://wa.me/+527225692542" target="_blank"><i class="fab fa-whatsapp aredes"></i></a>
     </div>
-    <div class="col-sm-4">
-        <img src="img/Frase03.jpg" width="255" height="255">
+  </section>
+
+  <section style="padding: 20px 20px 20px;">
+    <div class="col-sm-12">
+        <iframe src="https://open.spotify.com/embed/album/1Eye8lGTiMNzTddUV6tAll"  frameborder="0" allowtransparency="true" allow="encrypted-media" class="framedisco iframeEm"></iframe>
     </div>
-    <div class="col-sm-4">
-        <img src="img/Frase04.jpg" width="255" height="255">
+  </section>
+
+  <section style="padding: 20px 20px 20px;">
+    <div class="col-sm-12">
+        <a href="https://i0005.clarodrive.com/s/7JQ5MPEis8JNjoT?originalview=true" target="_blank">
+           <img src="img/CalroDrive.png" class="imageMP3">
+        </a>
     </div>
-    <div class="col-sm-4">
-        <img src="img/Frase05.jpg" width="255" height="255">
-    </div>
-    <div class="col-sm-4">
-        <img src="img/Frase06.jpg" width="255" height="255">
-    </div>
-  </div>
-</div>
+  </section>
 
-<div id="redes" class="bg-1">
-    <div class="container">
-      <h2 class="text-center">REDES SOCIALES</h3>
-      <div class="row">
-        <center>
-        <table class="table">
-          <tr>
-            <td style="width:20%;"><a href="https://www.facebook.com/mostrojovan"target="_blank"><i class="fab fa-facebook-f aredes"></i></a></td>
-            <td style="width:20%;"><a href="https://www.instagram.com/mostrojovan" target="_blank"><i class="fab fa-instagram aredes"></i></a></td>
-            <td style="width:20%;"><a href="https://www.tiktok.com/mostrojovan" target="_blank"><i class="fab fa-tiktok aredes"></i></a></td>
-            <td style="width:20%;"><a href="http://youtube.com/MostroJovan" target="_blank"><i class="fab fa-youtube aredes"></i></a></td>
-            <td style="width:20%;"><a href="https://wa.me/+527225692542" target="_blank"><i class="fab fa-whatsapp aredes"></i></a></td>
-            
-          </tr>
-        </table>
-      </div>
-
-      <p><em>Disco en Spotify</em></p>
-        <div class="row">
-          <div class="col-sm-12">
-            <iframe src="https://open.spotify.com/embed/album/1Eye8lGTiMNzTddUV6tAll" width="1060" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media" class="framedisco"></iframe>
-          </div>
-        </div>
-        <br><br>
-        <div class="row">
-          <div class="col-sm-12">
-            <center>
-            <a href="https://i0005.clarodrive.com/s/7JQ5MPEis8JNjoT?originalview=true" target="_blank">
-              <img src="img/CalroDrive.png" style="width: 100%;">
-            </a>
-          </center>
-          </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#banner" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>Página Diseñada por JovDesign, basado en la plantilla de "Bootstrap Theme Made" por <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-   
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  });
-})
-
-$(document).ready(function(){
-            $('.search').on('keyup',function(){
-                var searchTerm = $(this).val().toLowerCase();
-                $('#userTbl tbody tr').each(function(){
-                    var lineStr = $(this).text().toLowerCase();
-                    if(lineStr.indexOf(searchTerm) === -1){
-                        $(this).hide();
-                    }else{
-                        $(this).show();
-                    }
-                });
-            });
-        });
-</script>
+  <footer>
+    © 2025 MostroJovan
+  </footer>
+</body>
+</html>
